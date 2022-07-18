@@ -1,9 +1,12 @@
 import Header from "../header/Header";
+import OrderHistory from "../order-history/OrderHistory";
 
 function App() {
     return (
-        <div className="app">
+        <div>
             <Header />
+            <hr />
+            <OrderHistory />
         </div>
     );
 }
