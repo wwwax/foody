@@ -1,4 +1,4 @@
-import orderHistory from "../../order-history.json";
+import orderHistory from "../../json/order-history.json";
 
 function OrderHistory() {
     return (

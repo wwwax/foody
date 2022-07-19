@@ -1,5 +1,5 @@
 import { v4 } from "uuid";
-import NavItem from "../navItem/navItem";
+import NavItem from "../nav-item/NavItem";
 
 const navItems = [
     { id: v4(), name: "menu" },

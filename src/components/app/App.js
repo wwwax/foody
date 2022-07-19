@@ -1,4 +1,5 @@
 import Header from "../header/Header";
+import Menu from "../menu/Menu";
 import OrderHistory from "../order-history/OrderHistory";
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
             <Header />
             <hr />
             <OrderHistory />
+            <hr />
+            <Menu />
         </div>
     );
 }
