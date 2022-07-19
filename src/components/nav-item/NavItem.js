@@ -1,5 +1,5 @@
 function NavItem({ name }) {
-    return <a href="#">{name}</a>;
+    return <a href="https://google.com">{name}</a>;
 }
 
 export default NavItem;

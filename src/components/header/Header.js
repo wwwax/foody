@@ -1,6 +1,6 @@
 import Logo from "../logo/Logo";
 import Nav from "../nav/Nav";
-import UserMenu from "../userMenu/userMenu";
+import UserMenu from "../user-menu/UserMenu";
 
 function Header() {
     return (
