@@ -1,6 +1,4 @@
-import orderHistory from "../../json/order-history.json";
-
-function OrderHistory() {
+function OrderHistory({ orderHistory }) {
     return (
         <table>
             <thead>

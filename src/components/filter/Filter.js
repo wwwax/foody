@@ -1,8 +1,12 @@
-function Filter() {
+function Filter({ filter, onChange }) {
     return (
-        <form className="filter">
-            <input type="text" />
-        </form>
+        <input
+            className="filter"
+            type="text"
+            value={filter}
+            placeholder="type to filter"
+            onChange={onChange}
+        />
     );
 }
 
