@@ -10,7 +10,7 @@ const navItems = [
 
 function Nav() {
     return (
-        <ul className="nav">
+        <ul className="Nav">
             {navItems.map((item) => (
                 <li key={item.id}>
                     <NavItem name={item.name} />

@@ -13,9 +13,43 @@ html {
     font-size: 16px;
 }
 
-table,
-th,
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightblue;
+    padding: 1rem 0;
+}
+
+.Nav {
+    list-style: none;
+    display: flex;
+}
+
+.NavItem {
+    color: rebeccapurple;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.UserMenu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.UserMenu:hover {
+    cursor: pointer;
+}
+
+.UserName {
+    margin: 0 1rem;
+}
+
+.Dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: lightblue;
+    padding: 0.5rem;
 }

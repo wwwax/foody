@@ -4,7 +4,7 @@ import UserMenu from "../user-menu/UserMenu";
 
 function Header() {
     return (
-        <div className="header">
+        <div className="Header">
             <Logo />
             <Nav />
             <UserMenu width={64} />
