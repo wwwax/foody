@@ -1,0 +1,19 @@
+{
+    "tabs": [
+        {
+            "id": 1,
+            "title": "Donec mollis hendrerit risus",
+            "text": "Curabitur ullamcorper ultricies nisi. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Donec id justo."
+        },
+        {
+            "id": 2,
+            "title": "Donec quam felis",
+            "text": "Vivamus consectetuer hendrerit lacus. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu."
+        },
+        {
+            "id": 3,
+            "title": "Vestibulum",
+            "text": "Fusce convallis metus id felis luctus adipiscing. Praesent egestas neque eu enim. Mauris sollicitudin fermentum libero. Vivamus elementum semper nisi. Sed libero."
+        }
+    ]
+}

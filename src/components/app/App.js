@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../header/Header';
 import Modal from '../modal/Modal';
 import Menu from '../menu/Menu';
+import Tabs from '../tabs/Tabs';
 
 class App extends React.Component {
     state = {
@@ -17,8 +18,8 @@ class App extends React.Component {
         return (
             <div>
                 <Header openModal={this.openModal} />
-                <Menu />
-
+                {/* <Menu /> */}
+                <Tabs />
                 {isModalOpen && <Modal closeModal={this.closeModal} />}
             </div>
         );
