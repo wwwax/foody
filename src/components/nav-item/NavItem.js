@@ -1,5 +1,5 @@
 function NavItem({ name }) {
-    return <a className="NavItem" href="https://google.com">{name}</a>;
+    return <div className='nav-item'>{name}</div>;
 }
 
 export default NavItem;

@@ -1,6 +1,8 @@
-function Dropdown() {
+import React from 'react';
+
+const Dropdown = React.forwardRef((props, ref) => {
     return (
-        <div className="Dropdown">
+        <div className='Dropdown' ref={ref}>
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
                 fugiat officia architecto dolor numquam velit aliquid, provident
@@ -10,6 +12,6 @@ function Dropdown() {
             </div>
         </div>
     );
-}
+});
 
 export default Dropdown;

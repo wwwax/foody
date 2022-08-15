@@ -1,7 +1,15 @@
-import logo from "../../images/logo.png";
+import logo from '../../images/logo.png';
 
-function Logo() {
-    return <img className="logo" src={logo} width={64} alt="foody" />;
+function Logo({ openModal }) {
+    return (
+        <img
+            className='logo'
+            src={logo}
+            width={64}
+            alt='foody'
+            onClick={openModal}
+        />
+    );
 }
 
 export default Logo;

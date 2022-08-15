@@ -1,34 +1,39 @@
-import React, { createRef } from "react";
-import avatar from "../../images/avatar.png";
-import Dropdown from "../dropdown/Dropdown";
+import React, { createRef } from 'react';
+import avatar from '../../images/avatar.png';
+import Dropdown from '../dropdown/Dropdown';
 
-const name = "John Doe";
+const name = 'John Doe';
 
 class UserMenu extends React.Component {
     state = {
         isDropdownOpen: false,
     };
 
-    containerRef = createRef();
-
-    toggleDropdown = () => {
-        this.setState((prev) => ({
-            isDropdownOpen: !prev.isDropdownOpen,
-        }));
-    };
+    userMenuRef = createRef();
+    dropdownRef = createRef();
 
     handleClick = (e) => {
-        if (!this.containerRef.current.contains(e.target)) {
+        if (
+            !this.state.isDropdownOpen &&
+            this.userMenuRef.current.contains(e.target)
+        ) {
+            this.setState({ isDropdownOpen: true });
+        }
+
+        if (
+            this.state.isDropdownOpen &&
+            !this.dropdownRef.current.contains(e.target)
+        ) {
             this.setState({ isDropdownOpen: false });
         }
     };
 
     componentDidMount() {
-        window.addEventListener("click", this.handleClick);
+        window.addEventListener('click', this.handleClick);
     }
 
     componentWillUnmount() {
-        window.removeEventListener("click", this.handleClick);
+        window.removeEventListener('click', this.handleClick);
     }
 
     render() {
@@ -37,14 +42,12 @@ class UserMenu extends React.Component {
 
         return (
             <div
-                style={{ border: "1px solid red" }}
-                className="UserMenu"
-                onClick={this.toggleDropdown}
-                ref={this.containerRef}
+                className={!isDropdownOpen ? 'user-menu' : 'user-menu active'}
+                ref={this.userMenuRef}
             >
-                <img width={width} src={avatar} alt="avatar" />
-                <span className="UserName">{name}</span>
-                {isDropdownOpen && <Dropdown />}
+                <img width={width} src={avatar} alt='avatar' />
+                <span className='UserName'>{name}</span>
+                {isDropdownOpen && <Dropdown ref={this.dropdownRef} />}
             </div>
         );
     }
